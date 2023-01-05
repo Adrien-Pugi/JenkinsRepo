@@ -4,7 +4,7 @@ pipeline {
    
     stages {
 
-        stage('get code from github') {
+        stage('get code from github+gitHook') {
             steps {
                 echo 'Pulling...';
                 git branch: 'master',
